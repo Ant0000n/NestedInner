@@ -5,4 +5,8 @@ package HomeWork
 
 fun main(){
     val array = arrayOf(1,3,0,3,6,7,8,4,3,0,4)
+    var count = 0
+    for (i in array){
+
+    }
 }
