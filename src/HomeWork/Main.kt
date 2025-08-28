@@ -11,11 +11,10 @@ fun main(){
             break
         }
     }
-    if (readln() == "2") {
-        while (true) {
+    if (readln() == "2"){
+        while (true){
             println(human.Body().description())
             break
         }
     }
-
 }
