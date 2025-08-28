@@ -3,10 +3,14 @@ package HomeWork
 // Создать массив целых чисел, в котором есть два нулевых элемента, не идущих подряд.
 // Посчитать количество элементов, которые находятся между нолями.
 
-fun main(){
-    val array = arrayOf(1,3,0,3,6,7,8,4,3,0,4)
+fun main() {
+    val array = arrayOf(1, 3, 0, 3, 6, 7, 8, 4, 3, 0, 4)
     var count = 0
-    for (i in array){
+    for (i in array) {
+       if (i == 0){
+
+           println(count)
+       }
 
     }
 }
