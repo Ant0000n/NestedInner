@@ -7,10 +7,12 @@ fun main() {
     val array = arrayOf(1, 3, 0, 3, 6, 7, 8, 4, 3, 0, 4)
     var count = 0
     for (i in array) {
-       if (i == 0){
-
-           println(count)
-       }
+        if (i == 0) {
+            while (i != 0) {
+                count++
+                println(count)
+            }
+        }
 
     }
 }

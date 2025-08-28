@@ -22,7 +22,17 @@ class Human (val name: String) {
         fun eyeColor(){
             println("Цвет глаз: серо-голубой")
         }
-
+    }
+    inner class Body{
+        fun description(){
+            println("\n ${bodyType()} \n ${colorSkin()}")
+        }
+        fun bodyType(){
+            println("Телосложение: спортивное")
+        }
+        fun colorSkin(){
+            println("Цвет кожи : светлый со специфическим загаром")
+        }
     }
 }
 
