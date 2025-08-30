@@ -4,34 +4,53 @@ package HomeWork
 // legs(ноги), в каждом из классов напишите функции этой части тела.
 // В главной функции опишите модель человека, вызвав всю функциональность написанных классов.
 
-class Human (val name: String) {
+class Human(val name: String) {
     fun base() {
         println("Характеристики человека: $name")
     }
 
-    inner class Head{
-        fun description(){
-            println("\n ${hairСolor()} \n ${hairCut()} \n ${eyeColor()}")
+    inner class Head {
+        fun description() {
+            println("\n${hairСolor()} \n${hairCut()} \n${eyeColor()}")
         }
-        fun hairСolor(){
-            println("Цвет волос: русый с тёмным оттенком")
+
+        fun hairСolor(): String {
+           return "Цвет волос: русый с тёмным оттенком"
         }
-        fun hairCut(){
-            println("Стрижка: короткая, бокс или цезарь")
+
+        fun hairCut(): String {
+            return "Стрижка: короткая, бокс или цезарь"
         }
-        fun eyeColor(){
-            println("Цвет глаз: серо-голубой")
+
+        fun eyeColor():  String {
+            return "Цвет глаз: серо-голубой"
         }
     }
-    inner class Body{
-        fun description(){
-            println("\n ${bodyType()} \n ${colorSkin()}")
+
+    inner class Body {
+        fun description() {
+            println("\n${bodyType()} \n${colorSkin()}")
         }
-        fun bodyType(){
-            println("Телосложение: спортивное")
+
+        fun bodyType(): String {
+            return "Телосложение: спортивное"
         }
-        fun colorSkin(){
-            println("Цвеи кожи: светлый со специфическим загаром")
+
+        fun colorSkin(): String {
+            return "Цвеи кожи: светлый со специфическим загаром"
+        }
+    }
+
+    inner class Legs {
+        fun description() {
+            println("\n${footSize()} \n${gait()}")
+        }
+
+        fun footSize(): String { return "Размер ноги: 44.5 (28 см)"
+        }
+
+        fun gait(): String {
+            return "Походка: ровная без изъянов"
         }
     }
 }
