@@ -25,4 +25,3 @@ fun search(persons: Array<String>) {
         }
     }
 }
-
