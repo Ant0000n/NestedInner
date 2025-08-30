@@ -8,6 +8,17 @@ class Human(val name: String) {
     fun base() {
         println("Характеристики человека: $name")
     }
+    fun toLive (){
+        val head = Head()
+        head.description()
+
+        val body = Body()
+        body.description()
+
+        val legs = Legs()
+        legs.description()
+
+    }
 
     inner class Head {
         fun description() {

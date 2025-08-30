@@ -3,24 +3,27 @@ package HomeWork
 fun main() {
     val human = Human("Антон")
     human.base()
+    human.toLive()
 
     println("Описание части тела: \n1. Голова \n2. Тело \n3. Ноги")
-    if (readln() == "1") {
+    val input = readln() //создаем данную переменную для работы типа сканера (с консоли считывает результат и подставляет под заданные if)
+    if (input == "1") {
         while (true) {
             human.Head().description()
             break
         }
     }
-    if (readln() == "2") {
+    if (input == "2") {
         while (true) {
             human.Body().description()
             break
         }
     }
-    if (readln() == "3"){
+    if (input == "3"){
         while (true){
             human.Legs().description()
             break
         }
     }
+
 }
